@@ -1,18 +1,12 @@
 -- load plugins
-require("pluginslist.lua")
-require("setting.lua")
-require("mapping.lua")
+require("pluginslist")
+require("setting")
+require("mapping")
 
-require("galaxyline.lua")
-require("nvimtree.lua")
+require("galaxyline")
+require("nvimtree")
 
 
 require("lsp.nvim-compe")
 require("lsp.nvim-lspconfig")
 require("lsp.lspkind")
-
-
-
-vim.cmd "colorscheme sonokai"
-vim.cmd "set termguicolors"
-
