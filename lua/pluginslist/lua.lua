@@ -8,5 +8,9 @@ function()
 	use {"sainnhe/sonokai"}
 	use {"kyazdani42/nvim-tree.lua"}
 	use {"glepnir/galaxyline.nvim"}
+	-- lsp
+	use {"neovim/nvim-lspconfig"}
+	use {"hrsh7th/nvim-compe"}
+	use {"onsails/lspkind-nvim"}
 end
 )
