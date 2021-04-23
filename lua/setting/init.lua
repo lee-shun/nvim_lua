@@ -1,6 +1,5 @@
 --  Basic Settings
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
-vim.g.mapleader = ' '
 vim.cmd "filetype plugin indent on"
 vim.o.autochdir=true
 
