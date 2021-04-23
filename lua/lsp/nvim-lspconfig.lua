@@ -1,6 +1,3 @@
-vim.cmd [[packadd nvim-lspconfig]]
-vim.cmd [[packadd nvim-compe]]
-
 local function buf_set_keymap(...)
     vim.api.nvim_buf_set_keymap(bufnr, ...)
 end
@@ -29,4 +26,28 @@ buf_set_keymap("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
 buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
 
 
+-- vim
 require'lspconfig'.vimls.setup{}
+
+-- lua only for C++ 17
+local system_name
+if vim.fn.has("mac") == 1 then
+  system_name = "macOS"
+elseif vim.fn.has("unix") == 1 then
+  system_name = "Linux"
+elseif vim.fn.has('win32') == 1 then
+  system_name = "Windows"
+else
+  print("Unsupported system for sumneko")
+end
+
+-- set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
+local sumneko_root_path = vim.fn.stdpath('cache')..'/lspconfig/sumneko_lua/lua-language-server'
+local sumneko_binary = sumneko_root_path.."/bin/"..system_name.."/lua-language-server"
+require'lspconfig'.sumneko_lua.setup{}
+
+-- texlab
+require'lspconfig'.texlab.setup{}
+
+-- pyright
+require'lspconfig'.pyright.setup{}

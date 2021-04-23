@@ -1,16 +1,23 @@
--- check if packer is installed (~/local/share/nvim/site/pack)
-local packer_exists = pcall(vim.cmd, [[packadd packer.nvim]])
+local execute = vim.api.nvim_command
+local fn = vim.fn
+
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+
+if fn.empty(fn.glob(install_path)) > 0 then
+    execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+    execute "packadd packer.nvim"
+end
 
 return require("packer").startup(
 function()
-	use {"wbthomason/packer.nvim", opt = true}
+	use {"wbthomason/packer.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
 	use {"kyazdani42/nvim-tree.lua"}
 	use {"glepnir/galaxyline.nvim"}
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
-	use {"hrsh7th/nvim-compe"}
+	use {"nvim-lua/completion-nvim"}
 	use {"onsails/lspkind-nvim"}
 end
 )
