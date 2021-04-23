@@ -56,7 +56,7 @@ vim.api.nvim_set_keymap(
 )
 
 vim.g.nvim_tree_bindings = {
-    ["<CR>"] = get_lua_cb("edit"),
+    ["<CR>"] = get_lua_cb("cd"),
     ["l"] = get_lua_cb("edit"),
     ["<2-LeftMouse>"] = get_lua_cb("edit"),
     ["<2-RightMouse>"] = get_lua_cb("cd"),

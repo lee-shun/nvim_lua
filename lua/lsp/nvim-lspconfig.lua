@@ -51,3 +51,6 @@ require'lspconfig'.texlab.setup{}
 
 -- pyright
 require'lspconfig'.pyright.setup{}
+
+-- C&C++
+require'lspconfig'.clangd.setup{}
