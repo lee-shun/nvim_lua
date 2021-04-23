@@ -11,13 +11,23 @@ end
 return require("packer").startup(
 function()
 	use {"wbthomason/packer.nvim"}
+
+    -- ui
+	use {"glepnir/galaxyline.nvim"}
+    use {"romgrk/barbar.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
-	use {"kyazdani42/nvim-tree.lua"}
-	use {"glepnir/galaxyline.nvim"}
+
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
 	use {"nvim-lua/completion-nvim"}
 	use {"onsails/lspkind-nvim"}
+
+    -- highlight
+    use {"nvim-treesitter/nvim-treesitter"}
+    use {"nvim-treesitter/playground"}
+
+    -- files
+    use {"kyazdani42/nvim-tree.lua"}
 end
 )
