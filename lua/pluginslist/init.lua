@@ -17,12 +17,14 @@ function()
 	use {"romgrk/barbar.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
+    use {"glepnir/dashboard-nvim"}
 
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
 	use {"nvim-lua/completion-nvim"}
 	use {"onsails/lspkind-nvim"}
 	use {"folke/lsp-trouble.nvim"}
+    use {"glepnir/lspsaga.nvim"}
 
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
@@ -30,6 +32,10 @@ function()
 
 	-- files
 	use {"kyazdani42/nvim-tree.lua"}
+
+    use {"nvim-lua/popup.nvim"}
+    use {"nvim-lua/plenary.nvim"}
+    use {"nvim-telescope/telescope.nvim"}
 
     -- Editor Enchance
     use {"windwp/nvim-autopairs"}
