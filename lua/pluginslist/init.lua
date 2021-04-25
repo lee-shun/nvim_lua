@@ -37,9 +37,10 @@ function()
     use {"nvim-lua/plenary.nvim"}
     use {"nvim-telescope/telescope.nvim"}
 
-    -- Editor Enchance
+    -- editor enchance
     use {"windwp/nvim-autopairs"}
     use {"terrortylor/nvim-comment"}
+    use {"tpope/vim-surround"}
 
 
 end

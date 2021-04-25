@@ -4,7 +4,6 @@ require("mapping")
 require("pluginslist")
 
 -- UI
-require("nvimtree")
 require("bar")
 require("galaxy_line")
 require("dashboard")
@@ -16,3 +15,10 @@ require("lsp.lspkind")
 
 -- Highlight
 require("treesitter")
+
+-- Files
+require("nvimtree")
+
+-- Editor Enchance
+require("autopairs")
+require("comment")

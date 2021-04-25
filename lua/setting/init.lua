@@ -64,4 +64,3 @@ vim.o.backup=false
 vim.o.undodir="/home/ls/.config/nvim/tmp/undo"
 vim.o.backupdir="/home/ls/.config/nvim/tmp/backup"
 vim.o.directory="/home/ls/.config/nvim/tmp/backup"
-
