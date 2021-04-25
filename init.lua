@@ -22,3 +22,6 @@ require("nvimtree")
 -- Editor Enchance
 require("autopairs")
 require("comment")
+
+-- Functions
+vim.cmd "source ~/.config/nvim/vimscripts/function.vim"
