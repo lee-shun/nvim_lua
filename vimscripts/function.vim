@@ -1,25 +1,5 @@
-"**************************************************************************************************
-"
-"
-"  _                    _   _                 _
-" | |    ___  ___      | \ | | ___  _____   _(_)_ __ ___  _ __ ___
-" | |   / _ \/ _ \_____|  \| |/ _ \/ _ \ \ / / | '_ ` _ \| '__/ __|
-" | |__|  __/  __/_____| |\  |  __/ (_) \ V /| | | | | | | | | (__
-" |_____\___|\___|     |_| \_|\___|\___/ \_/ |_|_| |_| |_|_|  \___|
-"
-"File   : basic.vim
-"
-"Author : lee-shun
-"
-"Email  : 2015097272@qq.com
-"
-"**************************************************************************************************
-
-
-"****************************************有用函数**************************************************
-
 "===
-"=== 转换tab为空格
+"=== convert tab to space
 "===
 fun! Tab2Sapce()
     exec "set tabstop=4"
@@ -28,7 +8,7 @@ fun! Tab2Sapce()
 endfun
  
 "===
-"=== 空格替换为TAB：
+"=== convert space to tab
 "===
 fun! Sapce2Tab()
     exec "set tabstop=4"
@@ -37,7 +17,7 @@ fun! Sapce2Tab()
 endfun
 
 "===
-"=== 清理空格
+"=== clear the extra space
 "===
 fun! CleanExtraSpaces()
     let save_cursor = getpos(".")
@@ -48,9 +28,8 @@ fun! CleanExtraSpaces()
 endfun
 
 "===
-"=== 编译运行
+"=== run the source code
 "===
-noremap r :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
     if &filetype == 'c'
@@ -97,7 +76,7 @@ func! CompileRunGcc()
 endfunc
 
 "===
-"=== 选择查找
+"=== search and find
 "===
 function! VisualSelection(direction, extra_filter) range
     let l:saved_reg = @"
@@ -118,7 +97,7 @@ endfunction
 
 
 "===
-"=== 自动文件
+"=== automatic head file
 "===
 autocmd BufNewFile *.cxx,*.c,*.cc,*.hpp,*.h,*.cpp,Makefile,CMakeLists.txt,*.sh,*.zsh,*.py exec ":call SetTitle()"
 " 加入注释
@@ -161,7 +140,7 @@ func SetComment_sh()
     call setline(18, "")
     call setline(19, "")
 endfunc
-" 定义函数SetTitle，自动插入文件头
+
 func SetTitle()
     if expand("%:e") == 'make'
         call setline(1,"")

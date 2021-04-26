@@ -21,10 +21,16 @@ function()
 
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
-	use {"nvim-lua/completion-nvim"}
+	-- use {"nvim-lua/completion-nvim"}
+    use {"hrsh7th/nvim-compe"}
 	use {"onsails/lspkind-nvim"}
 	use {"folke/lsp-trouble.nvim"}
 	use {"glepnir/lspsaga.nvim"}
+    use {"sbdchd/neoformat"}
+
+    -- snippest
+    use {"rafamadriz/friendly-snippets"}
+    use {"hrsh7th/vim-vsnip"}
 
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
@@ -41,6 +47,7 @@ function()
 	use {"windwp/nvim-autopairs"}
 	use {"terrortylor/nvim-comment"}
 	use {"tpope/vim-surround"}
+    use {"rhysd/clever-f.vim"}
 
 	-- git
 	use {"lewis6991/gitsigns.nvim"}

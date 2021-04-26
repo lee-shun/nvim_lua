@@ -10,7 +10,7 @@ require("dashboard")
 
 -- LSP
 require("lsp.lv-lspconfig")
-require("lsp.lv-completion")
+require("lsp.lv-compe")
 require("lsp.lv-lspkind")
 
 -- Highlight
