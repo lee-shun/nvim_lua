@@ -9,9 +9,9 @@ require("galaxy_line")
 require("dashboard")
 
 -- LSP
-require("lsp.nvim-lspconfig")
-require("lsp.completion-nvim")
-require("lsp.lspkind")
+require("lsp.lv-lspconfig")
+require("lsp.lv-completion")
+require("lsp.lv-lspkind")
 
 -- Highlight
 require("treesitter")
