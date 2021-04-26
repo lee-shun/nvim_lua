@@ -23,5 +23,11 @@ require("nvimtree")
 require("autopairs")
 require("comment")
 
+-- Git
+require("git")
+
+-- Indent
+require("indent")
+
 -- Functions
 vim.cmd "source ~/.config/nvim/vimscripts/function.vim"

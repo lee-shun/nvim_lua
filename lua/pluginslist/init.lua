@@ -13,18 +13,18 @@ function()
 	use {"wbthomason/packer.nvim"}
 
 	-- ui
-    use {"glepnir/galaxyline.nvim"}
+	use {"glepnir/galaxyline.nvim"}
 	use {"romgrk/barbar.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
-    use {"glepnir/dashboard-nvim"}
+	use {"glepnir/dashboard-nvim"}
 
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
 	use {"nvim-lua/completion-nvim"}
 	use {"onsails/lspkind-nvim"}
 	use {"folke/lsp-trouble.nvim"}
-    use {"glepnir/lspsaga.nvim"}
+	use {"glepnir/lspsaga.nvim"}
 
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
@@ -33,15 +33,20 @@ function()
 	-- files
 	use {"kyazdani42/nvim-tree.lua"}
 
-    use {"nvim-lua/popup.nvim"}
-    use {"nvim-lua/plenary.nvim"}
-    use {"nvim-telescope/telescope.nvim"}
+	use {"nvim-lua/popup.nvim"}
+	use {"nvim-lua/plenary.nvim"}
+	use {"nvim-telescope/telescope.nvim"}
 
-    -- editor enchance
-    use {"windwp/nvim-autopairs"}
-    use {"terrortylor/nvim-comment"}
-    use {"tpope/vim-surround"}
+	-- editor enchance
+	use {"windwp/nvim-autopairs"}
+	use {"terrortylor/nvim-comment"}
+	use {"tpope/vim-surround"}
 
+	-- git
+	use {"lewis6991/gitsigns.nvim"}
+
+	-- indent
+	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
 end
 )
