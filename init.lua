@@ -1,6 +1,7 @@
 -- Basic
 require("setting")
 require("mapping")
+require("theme")
 require("pluginslist")
 
 -- UI

@@ -23,6 +23,7 @@ vim.o.lazyredraw=true
 vim.o.ttyfast=true
 vim.o.visualbell=true
 vim.o.t_Co="256"
+vim.o.background="dark"
 vim.o.termguicolors=true
 
 --Search Settings
