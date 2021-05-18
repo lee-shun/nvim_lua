@@ -29,5 +29,8 @@ require("git")
 -- Indent
 require("indent")
 
+-- Todo
+require("todo")
+
 -- Functions
 vim.cmd "source ~/.config/nvim/vimscripts/function.vim"

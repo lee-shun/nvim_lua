@@ -35,6 +35,8 @@ function()
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
 	use {"nvim-treesitter/playground"}
+    -- for C&C++
+    use {"jackguo380/vim-lsp-cxx-highlight"}
 
 	-- files
 	use {"kyazdani42/nvim-tree.lua"}
@@ -51,9 +53,13 @@ function()
 
 	-- git
 	use {"lewis6991/gitsigns.nvim"}
+    use {"APZelos/blamer.nvim"}
 
 	-- indent
 	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+
+    -- todo
+    use {"folke/todo-comments.nvim"}
 
 end
 )

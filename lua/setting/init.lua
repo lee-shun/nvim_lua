@@ -7,7 +7,6 @@ vim.o.autochdir=true
 vim.o.encoding="UTF-8"
 
 -- Display Settings
-vim.cmd "colorscheme sonokai"
 vim.cmd " au TextYankPost * silent! lua vim.highlight.on_yank() "
 vim.o.scrolloff=5
 vim.wo.number=true
