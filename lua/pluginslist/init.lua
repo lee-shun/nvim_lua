@@ -17,6 +17,7 @@ function()
 	use {"romgrk/barbar.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
+    use {"folke/tokyonight.nvim"}
 	use {"glepnir/dashboard-nvim"}
 
 	-- lsp
@@ -35,6 +36,7 @@ function()
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
 	use {"nvim-treesitter/playground"}
+    use {"luochen1990/rainbow"}
     -- for C&C++
     use {"jackguo380/vim-lsp-cxx-highlight"}
 
@@ -50,16 +52,18 @@ function()
 	use {"terrortylor/nvim-comment"}
 	use {"tpope/vim-surround"}
     use {"rhysd/clever-f.vim"}
+    use {"folke/zen-mode.nvim"}
 
 	-- git
 	use {"lewis6991/gitsigns.nvim"}
-    use {"APZelos/blamer.nvim"}
+    use {"f-person/git-blame.nvim"}
 
 	-- indent
 	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
     -- todo
     use {"folke/todo-comments.nvim"}
+
 
 end
 )

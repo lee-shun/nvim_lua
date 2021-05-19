@@ -23,6 +23,7 @@ require("nvimtree")
 -- Editor Enchance
 require("autopairs")
 require("comment")
+require("zenmode")
 
 -- Git
 require("git")
