@@ -16,6 +16,7 @@ require("lsp.lv-lspkind")
 
 -- Highlight
 require("treesitter")
+require("numcolor")
 
 -- Files
 require("nvimtree")
@@ -24,6 +25,7 @@ require("nvimtree")
 require("autopairs")
 require("comment")
 require("zenmode")
+require("rainbow")
 
 -- Git
 require("git")

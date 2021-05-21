@@ -36,19 +36,20 @@ function()
 	-- highlight
 	use {"nvim-treesitter/nvim-treesitter"}
 	use {"nvim-treesitter/playground"}
-    use {"luochen1990/rainbow"}
+    use {"norcalli/nvim-colorizer.lua"}
+
     -- for C&C++
     use {"jackguo380/vim-lsp-cxx-highlight"}
 
 	-- files
 	use {"kyazdani42/nvim-tree.lua"}
-
 	use {"nvim-lua/popup.nvim"}
 	use {"nvim-lua/plenary.nvim"}
 	use {"nvim-telescope/telescope.nvim"}
 
 	-- editor enchance
 	use {"windwp/nvim-autopairs"}
+    use {"p00f/nvim-ts-rainbow"}
 	use {"terrortylor/nvim-comment"}
 	use {"tpope/vim-surround"}
     use {"rhysd/clever-f.vim"}
