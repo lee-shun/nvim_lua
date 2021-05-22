@@ -25,9 +25,10 @@ function()
 	-- use {"nvim-lua/completion-nvim"}
 	use {"hrsh7th/nvim-compe"}
 	use {"onsails/lspkind-nvim"}
-	use {"folke/lsp-trouble.nvim"}
 	use {"glepnir/lspsaga.nvim"}
 	use {"sbdchd/neoformat"}
+	use {"folke/lsp-colors.nvim"}
+	use {"folke/trouble.nvim"}
 
 	-- snippest
 	use {"rafamadriz/friendly-snippets"}
@@ -66,7 +67,7 @@ function()
 	use {"folke/todo-comments.nvim"}
 
 	-- markdown
-	use {"npxbr/glow.nvim", branch = 'main', run=":GlowInstall" }
+	use {"davidgranstrom/nvim-markdown-preview"}
 
 
 end
