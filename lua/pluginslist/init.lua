@@ -17,29 +17,29 @@ function()
 	use {"romgrk/barbar.nvim"}
 	use {"kyazdani42/nvim-web-devicons"}
 	use {"sainnhe/sonokai"}
-    use {"folke/tokyonight.nvim"}
+	use {"folke/tokyonight.nvim"}
 	use {"glepnir/dashboard-nvim"}
 
 	-- lsp
 	use {"neovim/nvim-lspconfig"}
 	-- use {"nvim-lua/completion-nvim"}
-    use {"hrsh7th/nvim-compe"}
+	use {"hrsh7th/nvim-compe"}
 	use {"onsails/lspkind-nvim"}
 	use {"folke/lsp-trouble.nvim"}
 	use {"glepnir/lspsaga.nvim"}
-    use {"sbdchd/neoformat"}
+	use {"sbdchd/neoformat"}
 
-    -- snippest
-    use {"rafamadriz/friendly-snippets"}
-    use {"hrsh7th/vim-vsnip"}
+	-- snippest
+	use {"rafamadriz/friendly-snippets"}
+	use {"hrsh7th/vim-vsnip"}
 
 	-- highlight
-	use {"nvim-treesitter/nvim-treesitter"}
+	use {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"}
 	use {"nvim-treesitter/playground"}
-    use {"norcalli/nvim-colorizer.lua"}
+	use {"norcalli/nvim-colorizer.lua"}
 
-    -- for C&C++
-    use {"jackguo380/vim-lsp-cxx-highlight"}
+	-- for C&C++
+	use {"jackguo380/vim-lsp-cxx-highlight"}
 
 	-- files
 	use {"kyazdani42/nvim-tree.lua"}
@@ -49,21 +49,24 @@ function()
 
 	-- editor enchance
 	use {"windwp/nvim-autopairs"}
-    use {"p00f/nvim-ts-rainbow"}
+	use {"p00f/nvim-ts-rainbow"}
 	use {"terrortylor/nvim-comment"}
 	use {"tpope/vim-surround"}
-    use {"rhysd/clever-f.vim"}
-    use {"folke/zen-mode.nvim"}
+	use {"rhysd/clever-f.vim"}
+	use {"folke/zen-mode.nvim"}
 
 	-- git
 	use {"lewis6991/gitsigns.nvim"}
-    use {"f-person/git-blame.nvim"}
+	use {"f-person/git-blame.nvim"}
 
 	-- indent
 	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
-    -- todo
-    use {"folke/todo-comments.nvim"}
+	-- todo
+	use {"folke/todo-comments.nvim"}
+
+	-- markdown
+	use {"npxbr/glow.nvim", branch = 'main', run=":GlowInstall" }
 
 
 end
