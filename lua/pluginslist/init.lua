@@ -4,70 +4,70 @@ local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
-	execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
-	execute "packadd packer.nvim"
+    execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+    execute "packadd packer.nvim"
 end
 
 return require("packer").startup(
 function()
-	use {"wbthomason/packer.nvim"}
+    use {"wbthomason/packer.nvim"}
 
-	-- ui
-	use {"glepnir/galaxyline.nvim"}
-	use {"romgrk/barbar.nvim"}
-	use {"kyazdani42/nvim-web-devicons"}
-	use {"sainnhe/sonokai"}
-	use {"folke/tokyonight.nvim"}
-	use {"glepnir/dashboard-nvim"}
+    -- ui
+    use {"glepnir/galaxyline.nvim"}
+    use {"romgrk/barbar.nvim"}
+    use {"kyazdani42/nvim-web-devicons"}
+    use {"sainnhe/sonokai"}
+    use {"folke/tokyonight.nvim"}
+    use {"glepnir/dashboard-nvim"}
 
-	-- lsp
-	use {"neovim/nvim-lspconfig"}
-	-- use {"nvim-lua/completion-nvim"}
-	use {"hrsh7th/nvim-compe"}
-	use {"onsails/lspkind-nvim"}
-	use {"glepnir/lspsaga.nvim"}
-	use {"sbdchd/neoformat"}
-	use {"folke/lsp-colors.nvim"}
-	use {"folke/trouble.nvim"}
+    -- lsp
+    use {"neovim/nvim-lspconfig"}
+    -- use {"nvim-lua/completion-nvim"}
+    use {"hrsh7th/nvim-compe"}
+    use {"onsails/lspkind-nvim"}
+    use {"glepnir/lspsaga.nvim"}
+    use {"sbdchd/neoformat"}
+    use {"folke/lsp-colors.nvim"}
+    use {"folke/trouble.nvim"}
 
-	-- snippest
-	use {"rafamadriz/friendly-snippets"}
-	use {"hrsh7th/vim-vsnip"}
+    -- snippest
+    use {"rafamadriz/friendly-snippets"}
+    use {"hrsh7th/vim-vsnip"}
 
-	-- highlight
-	use {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"}
-	use {"nvim-treesitter/playground"}
-	use {"norcalli/nvim-colorizer.lua"}
+    -- highlight
+    use {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"}
+    use {"nvim-treesitter/playground"}
+    use {"norcalli/nvim-colorizer.lua"}
 
-	-- for C&C++
-	use {"jackguo380/vim-lsp-cxx-highlight"}
+    -- for C&C++
+    use {"jackguo380/vim-lsp-cxx-highlight"}
 
-	-- files
-	use {"kyazdani42/nvim-tree.lua"}
-	use {"nvim-lua/popup.nvim"}
-	use {"nvim-lua/plenary.nvim"}
-	use {"nvim-telescope/telescope.nvim"}
+    -- files
+    use {"kyazdani42/nvim-tree.lua"}
+    use {"nvim-lua/popup.nvim"}
+    use {"nvim-lua/plenary.nvim"}
+    use {"nvim-telescope/telescope.nvim"}
 
-	-- editor enchance
-	use {"windwp/nvim-autopairs"}
-	use {"p00f/nvim-ts-rainbow"}
-	use {"terrortylor/nvim-comment"}
-	use {"tpope/vim-surround"}
-	use {"rhysd/clever-f.vim"}
-	use {"folke/zen-mode.nvim"}
+    -- editor enchance
+    use {"windwp/nvim-autopairs"}
+    use {"p00f/nvim-ts-rainbow"}
+    use {"terrortylor/nvim-comment"}
+    use {"tpope/vim-surround"}
+    use {"rhysd/clever-f.vim"}
+    use {"folke/zen-mode.nvim"}
 
-	-- git
-	use {"lewis6991/gitsigns.nvim"}
-	use {"f-person/git-blame.nvim"}
+    -- git
+    use {"lewis6991/gitsigns.nvim"}
+    use {"f-person/git-blame.nvim"}
 
-	-- indent
-	use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+    -- indent
+    use {"glepnir/indent-guides.nvim"}
 
-	-- todo
-	use {"folke/todo-comments.nvim"}
+    -- todo
+    use {"folke/todo-comments.nvim"}
 
-	-- markdown
-	use {"davidgranstrom/nvim-markdown-preview"}
+    -- markdown
+    use {"davidgranstrom/nvim-markdown-preview"}
 
 
 end

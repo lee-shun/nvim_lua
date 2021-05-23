@@ -1,1 +1,1 @@
-vim.g.indent_blankline_enabled="false"
+require('indent_guides').setup({})
