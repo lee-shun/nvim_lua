@@ -5,6 +5,7 @@ vim.o.autochdir=true
 
 -- Encode Settings
 vim.o.encoding="UTF-8"
+vim.o.spell=true
 
 -- Display Settings
 vim.cmd " au TextYankPost * silent! lua vim.highlight.on_yank() "

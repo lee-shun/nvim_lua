@@ -1,8 +1,8 @@
 -- Basic
 require("setting")
 require("mapping")
-require("theme")
 require("pluginslist")
+require("theme")
 
 -- UI
 require("bar")
